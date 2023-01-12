@@ -226,6 +226,25 @@ button:hover{
     background-color: var(--color-ternario);
     color: var(--color-fucsia);
 }
+
+/* contacto */
+#contact{
+    width: 100%;
+    background-color: var(--color-ternario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+footer{
+    width: 40%;
+    background-color: var(--color-ternario);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
 /* medias  */
 @media only screen and (max-width: 600px) {
     .burgerMenu img{
