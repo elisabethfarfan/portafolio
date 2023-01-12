@@ -45,9 +45,17 @@ header{
  nav a{
     padding: 0 1rem;
  }
+
  nav a img{
     width: 20px;
  }
+ nav a:hover{
+    background-color: var(--color-secundario);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+/* .burgerMenu */
 .burgerMenu{
     display: flex;
     justify-content: center;
@@ -56,7 +64,15 @@ header{
 .burgerMenu img{
     display: block;
 }
+/* .navBurger{
+    background-color: red;
+}
+ul{
 
+}
+li{
+
+} */
 /* home */
 
 #home{
@@ -244,6 +260,11 @@ footer{
     align-items: center;
     justify-content: space-around;
     padding-bottom: 3rem;
+}
+footer a:hover{
+    background-color: var(--color-primario);
+    padding: 1rem;
+    border-radius: 5px;
 }
 /* medias  */
 @media only screen and (max-width: 600px) {
