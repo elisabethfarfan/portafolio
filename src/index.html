@@ -10,72 +10,109 @@
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <title>Elisabeth Farfán</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#home">Inicio</a>
+        <div class="emailBox">
+            <spam>@elisabethfarfan💙</spam>
+        </div>
+        <nav>            
+            <a href="https://www.linkedin.com/in/elisabethfarfandeveloper/">
+                <img src="images/linkedin.png" alt="imagen de github">
+            </a>
+            <a href="https://github.com/elisabethfarfan">
+                <img src="images/github.png" alt="imagen de github">
+            </a>
+            <a href="https://github.com/elisabethfarfan">
+                <img src="images/instagram.png" alt="imagen de github">
+            </a>
+            <!-- <a href="#home">Inicio</a>
             <a href="#aboutme">Sobre mi</a>
             <a href="#projects">Proyectos</a>
             <a href="#skill">Habilidades</a>
-            <a href="#contact">Contácto</a>
+            <a href="#contact">Contácto</a> -->
         </nav>
+        <div class="burgerMenu">
+            <img src="images/menu.png" alt="imagen de github">
+        </div>
+
     </header>
     <main>
         <section id="home">
-            <div class="home--presentation">
-                <h1>Hola Mundo!</h1>
-                <h2>Soy Elisabeth Farfan 💻</h2>
-                <h3>Fronted developer & amante de la naturaleza</h3>
-                <img src="images/github.png" alt="imagen de github">
-                <img src="images/linkedin.png" alt="imagen de linkedin">
-            </div>
-            <div class="home-img">
-                <img src="images/developer.jpg">
-            </div>
-           
-        </section>
-
-        <section id="aboutme">
-            <h3>Sobre mi</h3>
-            <p>Soy ingenieria de sistemas de formación 💻</p>
-            <p>🎨✨ y derrolladora apasionada por el front end.🌈</p>
-            <p>📌 Estoy trabajando en proyectos con React y Angular. </p>
-            <p>En mi tiempo libre, disfruto de la lectura 📚 y caminar por el campo disfrutando de la naturaleza 🍃🐤🌵
-            </p>
-        </section>
-
-        <section id="Projects">
-            <h3>Mis Proyectos</h3>
-
-            <div>
-                <img src="">
-                <div>
-                    <h3>ChatOwl</h3>
-                    <p>
-                        Permite enviar mensajes en tiempo real. Fue desarrollado con React, node, socket, express y PostgreSQL.
+                <h1>Elisabeth Farfan</h1>
+                <h2>
+                    <span>Fronted Developer</span>
+                    ➕ 
+                    <span>Aprendiz por Siempre</span>
+                </h2>
+                
+                    <p id="aboutMe">Soy ingenieria de sistemas de formación y apasionada por el front end.
+                        Estoy trabajando en proyectos con React y Angular.
+                        En mi tiempo libre, disfruto de la lectura y caminar por el campo disfrutando de la naturaleza 
                     </p>
-                </div>
-                <div>
-                    <a>
-                        <img src="" alt="">
-
+                    <a class="buttonVer" href="#projects">
+                        <button> Ver Proyectos</button>
                     </a>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skill">
+            <div class="skillBox">
+                <img class="img_skill" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Html5 icon">
+                <h3 class="title_skill">Html5</h3>
+            </div>
+        </section>
+
+        <!-- proyectos -->
+        <section id="projects">
+            <h3>Mis Proyectos</h3>
+        
+            <div class="boxCard">
+
+                <div class="card">
+                    <img class="imgProjects" src="./images/chatOwl.png" alt="">
+                    <div class="textCard">
+                        <h3>ChatOwl</h3>                        
+                        <div class="cardIcons">
+                            <button>Ver Proyecto</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>               
+                </div>
+    
+                <!-- second projects -->
+                <div class="card">
+                    <img class="imgProjects" src="./images/chatOwl.png" alt="">
+                    <div class="textCard">
+                        <h3>ChatOwl</h3>                        
+                        <div class="cardIcons">
+                            <button>Ver Proyecto</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>               
+                </div>
+                  <!-- second projects -->
+                  <div class="card">
+                    <img class="imgProjects" src="./images/chatOwl.png" alt="">
+                    <div class="textCard">
+                        <h3>ChatOwl</h3>                        
+                        <div class="cardIcons">
+                            <button>Ver Proyecto</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>               
                 </div>
             </div>
 
+
+
         </section>
 
-        <section id="skill">
-            <div>
-                <img src="">
-                <p>HTML</p>
-            </div>
-        </section>
+        
        
         <section id="contact">
             <h3>Contáctame</h3>

@@ -1,58 +1,146 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
+
 :root{
-    --color-primario:#6D8299;
-    --color-secundario:#316B83;
-    --color-ternario:#8CA1A5;
-    --color-cuarto:#D5BFBF;
+    --color-primario:#0f172a;
+    --color-secundario:#cbd5e1;
+    --color-ternario:#205295;
+    --color-fucsia:#e9409f;
     --white:rgb(238, 238, 238);
     --black:#000;
 }
 
-body{
-    background-color: var(--color-primario);
-    padding: 2rem;
+
+header{
     width: 100%;
-}
-nav{
+    height: 80px;
     background-color: var(--color-primario);
+    padding: 20px;
+    position: fixed;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
-a{
-    padding: 0.5em;
-    text-decoration: none;
+.emailBox{
+    
+    width: 11rem;
+    padding: .3rem;
+    background-color: #7195df;
+    border-radius: 10px ;
+    border: 3px solid;
+    border-color: var(--color-fucsia);
     color: var(--white);
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 1.2rem;
+
 }
-a:hover{
-    background-color: var(--color-secundario);
-    border-radius: 5px;
+ nav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+ }
+ nav a{
+    padding: 0 1rem;
+ }
+ nav a img{
+    width: 20px;
+ }
+.burgerMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burgerMenu img{
+    display: block;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-}
+/* home */
 
 #home{
+    background-color: var(--color-primario);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.home--presentation{
-    width: 60%;
+h1{
+    color: var(--color-secundario);
+    font-size: 60px;
+    padding-bottom: 1rem;
+    font-weight: 700;
 
 }
-.home-img{
-    width: 40%;
+h2{
+    color: var(--color-secundario);
+
+    
 }
-.home-img img{
+h2 span{
+    background: linear-gradient(to right, #5c89e2,#e23f9c);
+    font-size: 35px;
+    font-weight:800 ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+    white-space: nowrap;
+}
+
+#aboutMe{
+    margin: 1rem;
+    width: 70%; 
+    font-size: 20px;    
+    font-weight: 400;
+    letter-spacing: .05rem;
+    color: var(--color-secundario);
+}
+
+.buttonVer{
+    width: 230px;
+    height: 40px;
+    border-radius: 10px; 
+
+}
+
+button{
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    border: none;  
+    border-radius: 10px;
+    background-color: var(--color-fucsia);
+    color: var(--color-secundario);
+    font-size: 20px;
+    font-weight:600 ;
+    letter-spacing: .05rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    box-shadow:  2px 4px 3px rgba(134, 133, 133, 0.3);
+
+    margin-top: 3rem;
 }
+
+button:hover{
+    background-color: var(--color-ternario);
+    color: var(--color-fucsia);
+}
+
+
+/* skill */
+#skill{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-ternario);
+}
+/* medias  */
+@media only screen and (max-width: 600px) {
+    .burgerMenu img{
+        display: block;
+    }
+    .emailBox{
+        display: none;
+    }
+  }
